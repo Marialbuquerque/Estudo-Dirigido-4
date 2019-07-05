@@ -1,0 +1,61 @@
+lstpalavra = ["abacate", "abacaxi", "abaco", "abajur", "abdomen", "abelha", "abismo", "abobora", "aborígine", "aborto", "abraço", "abrasão" , "abril", "abstinência", "abstrair", "academia", "açafrao", "açaí", "acelerador", "acerola", "acetona", "acre", "acusar", "adolescente", "adrenalina", "advogado", "agiota", "agressao", "alcool", "alcoolatra", "alfaiate", "alfajor", "alfandega", "algarismo", "alho", "Alienígena", "", "almôndega", "anaconda", "ancinho", "banana", "batata", "amendobobo"] 
+numero = int (entrada (" digite um número ... ")) 
+indice = (numero * 567)% len (lstpalavra ) 
+= = (lstpalavra [indice]) 
+forca = ["X ==: ==", "\ nX:", "\ nX", "\ nX", "\ nX", "\ nX", "\ nX "," \ nX ============ "] 
+para x no intervalo (100): 
+print ()"\ nX", "\ nX", "\ nX", "\ nX", "\ nX", "\ nX ============"] para x no intervalo (100): impressão()"\ nX", "\ nX", "\ nX", "\ nX", "\ nX", "\ nX ============"] para x no intervalo (100): impressão()
+digitadas = [] 
+acertos = [] 
+erros = 0 
+while Verdadeiro: 
+senha = "" 
+para letra in palavra: 
+senha + = letra se letra em acertos else "." 
+print (Senha) 
+se Senha == Palavra: 
+print ( "Você acertou!") 
+pausa 
+Tentativa = input ( "\ nDigite Uma letra:").. inferior () tira () 
+se Tentativa em digitadas: 
+print ( "rápido Você já tentou esta letra! ") 
+continue 
+else: 
+digitadas + = tentativa 
+se tentativa em palavra: 
+acertos + = tente 
+
+erros + = 1 
+print (" Você errou! ")
+
+    if erros == 1:
+         forca.pop(2)
+         forca.insert(2,"\nX (._.)")
+         print("".join(forca))
+
+    if erros == 2:
+        forca.pop(3)
+        forca.insert(3, "\nX  | |")
+        print("".join(forca))
+
+    if erros == 3:
+        forca.pop(3)
+        forca.insert(3, "\nX /| |")
+        print("".join(forca))
+
+    if erros == 4:
+        forca.pop(3)
+        forca.insert(3,"\nX /| |\ " )
+        print("".join(forca))
+
+    if erros >= 5:
+        forca.pop(4)
+        forca.insert(4,"\nX  /-")
+        print("".join(forca))
+
+    if erros == 6:
+        forca.pop(4)
+        forca.insert(4,"\nX  /-\ ")
+        print("".join(forca))
+        print("Enforcado!, a palavra era %s" % (palavra))
+        break
